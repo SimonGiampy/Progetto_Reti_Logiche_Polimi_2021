@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../visionary.srcs/sources_1/new/minmax.vhd" \
+"../../../../visionary.srcs/sources_1/new/project.vhd" \
+"../../../../visionary.srcs/sim_1/new/testbench0.vhd" \
+
+# Do not sort compile order
+nosort
