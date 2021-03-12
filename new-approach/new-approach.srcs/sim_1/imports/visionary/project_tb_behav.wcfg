@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="131250fs"></ZoomStartTime>
-      <ZoomEndTime time="288051fs"></ZoomEndTime>
-      <Cursor1Time time="274450fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="316919fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/project_tb/tb_done" type="logic">
       <obj_property name="ElementShortName">tb_done</obj_property>
       <obj_property name="ObjectShortName">tb_done</obj_property>
@@ -31,6 +31,14 @@
       <obj_property name="ElementShortName">tb_start</obj_property>
       <obj_property name="ObjectShortName">tb_start</obj_property>
    </wvobject>
+   <wvobject fp_name="/project_tb/mem_we" type="logic">
+      <obj_property name="ElementShortName">mem_we</obj_property>
+      <obj_property name="ObjectShortName">mem_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/enable_wire" type="logic">
+      <obj_property name="ElementShortName">enable_wire</obj_property>
+      <obj_property name="ObjectShortName">enable_wire</obj_property>
+   </wvobject>
    <wvobject fp_name="/project_tb/tb_clk" type="logic">
       <obj_property name="ElementShortName">tb_clk</obj_property>
       <obj_property name="ObjectShortName">tb_clk</obj_property>
@@ -38,14 +46,6 @@
    <wvobject fp_name="/project_tb/mem_o_data" type="array">
       <obj_property name="ElementShortName">mem_o_data[7:0]</obj_property>
       <obj_property name="ObjectShortName">mem_o_data[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/enable_wire" type="logic">
-      <obj_property name="ElementShortName">enable_wire</obj_property>
-      <obj_property name="ObjectShortName">enable_wire</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/mem_we" type="logic">
-      <obj_property name="ElementShortName">mem_we</obj_property>
-      <obj_property name="ObjectShortName">mem_we</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/o_address" type="array">
       <obj_property name="ElementShortName">o_address[15:0]</obj_property>
@@ -65,21 +65,9 @@
       <obj_property name="ElementShortName">col[7:0]</obj_property>
       <obj_property name="ObjectShortName">col[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/project_tb/UUT/max" type="array">
-      <obj_property name="ElementShortName">max[7:0]</obj_property>
-      <obj_property name="ObjectShortName">max[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/min" type="array">
-      <obj_property name="ElementShortName">min[7:0]</obj_property>
-      <obj_property name="ObjectShortName">min[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/STRUCT/iter_i" type="array">
-      <obj_property name="ElementShortName">iter_i[7:0]</obj_property>
-      <obj_property name="ObjectShortName">iter_i[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/STRUCT/iter_j" type="array">
-      <obj_property name="ElementShortName">iter_j[7:0]</obj_property>
-      <obj_property name="ObjectShortName">iter_j[7:0]</obj_property>
+   <wvobject fp_name="/project_tb/UUT/STRUCT/iter_i" type="other">
+      <obj_property name="ElementShortName">iter_i</obj_property>
+      <obj_property name="ObjectShortName">iter_i</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/STRUCT/read_address" type="array">
       <obj_property name="ElementShortName">read_address[15:0]</obj_property>
@@ -104,5 +92,13 @@
    <wvobject fp_name="/project_tb/UUT/STRUCT/input_address" type="array">
       <obj_property name="ElementShortName">input_address[15:0]</obj_property>
       <obj_property name="ObjectShortName">input_address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/UUT/STRUCT/min_val" type="array">
+      <obj_property name="ElementShortName">min_val[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min_val[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/UUT/STRUCT/max_val" type="array">
+      <obj_property name="ElementShortName">max_val[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_val[7:0]</obj_property>
    </wvobject>
 </wave_config>

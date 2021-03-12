@@ -50,7 +50,7 @@ Moore: process(i_clk, start, i_data, input_address)
 begin
 if rising_edge(i_clk) then
     case state_current is
-    when reset =>
+    when reset => -- default values for all the signals
         if (start = '1') then
             state_next <= init;
         end if;
@@ -65,20 +65,22 @@ if rising_edge(i_clk) then
         iter_j <= "00000000";
         read_address <= (1 => '1', others => '0');
         
-    when init =>
+    when init => -- serves for updating the out address
         test_signal <= '1';
         data_address <= read_address;
         state_next <= s1;
         
     when s1 =>
-        if (input_address = read_address) then
+    -- when the input address signal is the same as the one that this component asked for, it receives the new input data value
+        if (input_address = read_address) then  
             if (i_data > max_val) then --changes max value
-                max <= i_data;
+                max_val <= i_data;
             end if;
             if (i_data < min_val) then --changes min value
-                min <= i_data;
+                min_val <= i_data;
             end if;
             
+            -- logic for reading all the numbers
             iter_j <= std_logic_vector(unsigned(iter_j) + 1);
             state_next <= s2;
         else
@@ -86,6 +88,7 @@ if rising_edge(i_clk) then
         end if;
         
     when s2 =>
+    -- iteration mechanism that doesn't use any multiplication
         if (iter_j = col) then
             iter_j <= (others => '0');
             iter_i <= std_logic_vector(unsigned(iter_i) + 1);
@@ -102,8 +105,11 @@ if rising_edge(i_clk) then
         else 
             state_next <= init;
         end if;
-    when stop => -- nothing
+        
+    when stop => -- does nothing and signals the main component that min and max are computed
         state_next <= stop;
+        min <= min_val;
+        max <= max_val;
         finish <= '1';
         
     end case;

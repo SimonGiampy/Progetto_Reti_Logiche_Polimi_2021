@@ -48,7 +48,7 @@ begin
 
 
     -- Regular Moore Machine with the clock signal in the sensitivity list
-    main: process(i_clk, i_rst, i_start, i_data, state_current, state_next, read_address)
+    main: process(i_clk, i_rst)
     begin
     if (rising_edge(i_clk)) then -- synchronization on the rising edge of the clock
         case state_current is
@@ -103,7 +103,7 @@ begin
     
     
    -- this process serves as a switch for the choice of the next state 
-    switch_state: process(i_clk, i_rst, i_start, i_data, state_current, state_next)
+    switch_state: process(i_clk, i_rst)
     begin
     if (rising_edge(i_clk)) then -- synchronization on the rising edge of the clock
         case state_current is

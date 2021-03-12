@@ -21,7 +21,8 @@ end project_reti_logiche;
 
 architecture Behavioral of project_reti_logiche is
 
-component MINMAX is
+-- select component for testing
+component MULTIPLICATION is
 port (
     -- input ports of the component
     i_clk: in std_logic;
@@ -48,7 +49,8 @@ end component;
 
 begin
 
-STRUCT: MINMAX port map (
+-- defines the links between input and output signals and this architecture's signals
+STRUCT: MULTIPLICATION port map (
 i_clk => i_clk, i_data => i_data, input_address => response_addr, row => row, col => col, start => ready, -- input ports mapping
 min => min, max => max, finish => is_done, data_address => new_address -- output ports mapping
 );
@@ -103,7 +105,8 @@ if (rising_edge(i_clk)) then
     when mm1 =>
         ready <= '1';
         state_next <= mm2;
-    when mm2 =>
+        
+    when mm2 => -- the code below probably needs an adjustment
         if (is_done = '0') then
             o_address <= new_address;
             state_next <= mm3;
