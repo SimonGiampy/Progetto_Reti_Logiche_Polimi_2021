@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../fsm-only-approach.srcs/sources_1/new/last_chance.vhd" \
-"../../../../fsm-only-approach.srcs/sim_1/new/tb_last_chance.vhd" \
-
-# Do not sort compile order
-nosort

@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../new-approach.srcs/sources_1/new/minmax_multiplication.vhd" \
-"../../../../new-approach.srcs/sources_1/new/project.vhd" \
-"../../../../new-approach.srcs/sim_1/new/testbench0.vhd" \
-
-# Do not sort compile order
-nosort
