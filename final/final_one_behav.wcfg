@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="26067fs"></ZoomStartTime>
-      <ZoomEndTime time="1194787fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomStartTime time="1899166fs"></ZoomStartTime>
+      <ZoomEndTime time="2899167fs"></ZoomEndTime>
+      <Cursor1Time time="2732500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="211"></NameColumnWidth>
-      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="/project_tb/UUT/i_clk" type="logic">
       <obj_property name="ElementShortName">i_clk</obj_property>
       <obj_property name="ObjectShortName">i_clk</obj_property>
@@ -31,13 +31,21 @@
       <obj_property name="ElementShortName">i_start</obj_property>
       <obj_property name="ObjectShortName">i_start</obj_property>
    </wvobject>
-   <wvobject fp_name="/project_tb/UUT/i_data" type="array">
-      <obj_property name="ElementShortName">i_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">i_data[7:0]</obj_property>
+   <wvobject fp_name="/project_tb/c_CLOCK_PERIOD" type="other">
+      <obj_property name="ElementShortName">c_CLOCK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">c_CLOCK_PERIOD</obj_property>
    </wvobject>
-   <wvobject fp_name="/project_tb/UUT/o_address" type="array">
-      <obj_property name="ElementShortName">o_address[15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_address[15:0]</obj_property>
+   <wvobject fp_name="/project_tb/mem_address" type="array">
+      <obj_property name="ElementShortName">mem_address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/mem_o_data" type="array">
+      <obj_property name="ElementShortName">mem_o_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_o_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/project_tb/mem_i_data" type="array">
+      <obj_property name="ElementShortName">mem_i_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_i_data[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/o_done" type="logic">
       <obj_property name="ElementShortName">o_done</obj_property>
@@ -50,42 +58,6 @@
    <wvobject fp_name="/project_tb/UUT/o_we" type="logic">
       <obj_property name="ElementShortName">o_we</obj_property>
       <obj_property name="ObjectShortName">o_we</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/o_data" type="array">
-      <obj_property name="ElementShortName">o_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">o_data[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/row" type="other">
-      <obj_property name="ElementShortName">row</obj_property>
-      <obj_property name="ObjectShortName">row</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/col" type="other">
-      <obj_property name="ElementShortName">col</obj_property>
-      <obj_property name="ObjectShortName">col</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/max" type="other">
-      <obj_property name="ElementShortName">max</obj_property>
-      <obj_property name="ObjectShortName">max</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/min" type="other">
-      <obj_property name="ElementShortName">min</obj_property>
-      <obj_property name="ObjectShortName">min</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/iter_i" type="other">
-      <obj_property name="ElementShortName">iter_i</obj_property>
-      <obj_property name="ObjectShortName">iter_i</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/iter_j" type="other">
-      <obj_property name="ElementShortName">iter_j</obj_property>
-      <obj_property name="ObjectShortName">iter_j</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/tmp_num" type="array">
-      <obj_property name="ElementShortName">tmp_num[15:0]</obj_property>
-      <obj_property name="ObjectShortName">tmp_num[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/project_tb/UUT/dimension" type="other">
-      <obj_property name="ElementShortName">dimension</obj_property>
-      <obj_property name="ObjectShortName">dimension</obj_property>
    </wvobject>
    <wvobject fp_name="/project_tb/UUT/delta_val" type="other">
       <obj_property name="ElementShortName">delta_val</obj_property>

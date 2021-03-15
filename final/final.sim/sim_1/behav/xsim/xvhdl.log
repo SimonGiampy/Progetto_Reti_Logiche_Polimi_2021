@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Programming/Logic-Circuits-Project/final/final.srcs/sources_1/new/final.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Programming/Logic-Circuits-Project/final/final.srcs/sim_1/imports/TBs/threeConsecutiveRunsAndResetOnFirstRun.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb'
