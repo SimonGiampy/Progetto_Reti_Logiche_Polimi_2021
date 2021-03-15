@@ -1,3 +1,14 @@
+-- Progetto Reti Logiche, anno accademico 2020 / 2021
+-- Componenti del gruppo di Lavoro:
+--		- Simone Giampà, matricola: 909739, codice persona: 10659184
+--		- Francesco Leone, matricola: matricola 910196, codice persona: 10659809
+--
+-- FPGA utilizzato per la sintesi del circuito in Vivado: xc7a200tfbg484-1
+
+-- Approccio per la realizzazione del progetto: Finite State Machine
+
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
