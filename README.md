@@ -1,6 +1,5 @@
-# Logic Circuits Project
+# Progetto di Reti Logiche 2021, Politecnico di Milano
 
-#### Logic Circuits Project in Vivado
 2021
 Politecnico di Milano
 
